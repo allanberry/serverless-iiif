@@ -153,7 +153,7 @@ class IIIFLambda {
     var s3 = new AWS.S3();
     return s3.getObject({
       Bucket: this.sourceBucket,
-      Key: `${id}.tif`
+      Key: `${id}`
     }).createReadStream();
   }
 }
